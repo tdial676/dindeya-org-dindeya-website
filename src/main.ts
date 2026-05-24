@@ -14,7 +14,7 @@ async function initializeApp(): Promise<void> {
 
   // Register Service Worker for PWA capabilities
   if (SITE_CONFIG.features.serviceWorker) {
-    await registerServiceWorker('/sw.js');
+    await registerServiceWorker(`${import.meta.env.BASE_URL}sw.js`);
   }
 
   // Setup install prompt

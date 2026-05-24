@@ -2,7 +2,7 @@
   "name": "Dindeya Development & Support Organization",
   "short_name": "Dindeya",
   "description": "Building healthcare infrastructure and community development in rural Guinea through the African diaspora",
-  "start_url": "/",
+  "start_url": "./",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait-primary",

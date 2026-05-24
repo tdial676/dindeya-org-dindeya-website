@@ -6,15 +6,15 @@ const CACHE_VERSION = 'v2';
 const CACHE_NAME = `dindeya-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `dindeya-runtime-${CACHE_VERSION}`;
 
-/* Pre-cache only static, non-hashed URLs */
+/* Pre-cache only static, non-hashed URLs (relative to SW scope) */
 const STATIC_ASSETS = [
-  '/',
-  '/index.html',
-  '/projects.html',
-  '/team.html',
-  '/contact.html',
-  '/membership.html',
-  '/manifest.json',
+  './',
+  './index.html',
+  './projects.html',
+  './team.html',
+  './contact.html',
+  './membership.html',
+  './manifest.json',
 ];
 
 /* ── Install: pre-cache shell pages ── */
@@ -59,7 +59,7 @@ self.addEventListener('fetch', (event) => {
           return response;
         })
         .catch(() =>
-          caches.match(request).then((r) => r || caches.match('/index.html'))
+          caches.match(request).then((r) => r || caches.match('./index.html'))
         )
     );
     return;
