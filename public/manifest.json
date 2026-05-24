@@ -1,0 +1,42 @@
+{
+  "name": "Dindeya Development & Support Organization",
+  "short_name": "Dindeya",
+  "description": "Building healthcare infrastructure and community development in rural Guinea through the African diaspora",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#87A96B",
+  "background_color": "#F5F5F4",
+  "icons": [
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "non-profit"],
+  "shortcuts": [
+    {
+      "name": "Our Projects",
+      "short_name": "Projects",
+      "description": "View our current initiatives and campaigns",
+      "url": "/projects.html",
+      "icons": [{ "src": "assets/images/logo.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Support Us",
+      "short_name": "Join Us",
+      "description": "Get involved with Dindeya",
+      "url": "/membership.html",
+      "icons": [{ "src": "assets/images/logo.png", "sizes": "96x96" }]
+    }
+  ]
+}
