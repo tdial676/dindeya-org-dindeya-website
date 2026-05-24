@@ -19,11 +19,12 @@ export class Header {
     const navContainer = createElement('div', { classes: ['nav-container'] });
 
     // Logo
+    const base = import.meta.env.BASE_URL;
     const logo = createElement('a', {
       classes: ['logo'],
-      attributes: { href: '/index.html' },
+      attributes: { href: `${base}index.html` },
       innerHTML: `
-        <img src="/assets/images/logo.png" alt="Dindeya Logo" class="logo-icon" />
+        <img src="${base}assets/images/logo.png" alt="Dindeya Logo" class="logo-icon" />
         <span>Dindeya</span>
       `,
     });

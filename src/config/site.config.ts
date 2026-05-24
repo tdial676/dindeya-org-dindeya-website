@@ -35,11 +35,11 @@ export const SITE_CONFIG = {
   
   // Navigation
   navigation: [
-    { label: 'Home', href: '/index.html' },
-    { label: 'Projects', href: '/projects.html' },
-    { label: 'Our Team', href: '/team.html' },
-    { label: 'Contact', href: '/contact.html' },
-    { label: 'Join Us', href: '/membership.html', primary: true },
+    { label: 'Home', href: 'index.html' },
+    { label: 'Projects', href: 'projects.html' },
+    { label: 'Our Team', href: 'team.html' },
+    { label: 'Contact', href: 'contact.html' },
+    { label: 'Join Us', href: 'membership.html', primary: true },
   ],
   
   // Hero Section
