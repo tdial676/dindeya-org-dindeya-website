@@ -1929,8 +1929,8 @@ textarea {
   left: 50%;
   transform: translateX(-50%);
   width: 3px;
-  height: 80%;
-  top: 10%;
+  height: calc(100% - var(--spacing-xl));
+  top: 0;
   background-color: var(--sage-primary);
   border-radius: var(--radius-full);
   opacity: 0.6;
@@ -1986,8 +1986,8 @@ textarea {
   .journey-timeline::before {
     left: 10px;
     transform: none;
-    top: 0;
-    height: 100%;
+    top: calc(var(--spacing-md) + 1.5rem);
+    height: calc(100% - var(--spacing-md) - var(--spacing-xl) - var(--spacing-2xl) - 1.5rem);
   }
 
   .journey-item,
@@ -1997,10 +1997,12 @@ textarea {
     margin-left: 0;
     padding-left: var(--spacing-2xl);
     text-align: left;
+    position: relative;
   }
 
   .journey-item::before {
     left: 2px;
+    top: 1.5rem;
     transform: none;
   }
 }
