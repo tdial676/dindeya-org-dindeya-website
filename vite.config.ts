@@ -7,7 +7,7 @@ const __dirname = dirname(__filename);
 
 export default defineConfig({
   root: 'src',
-  base: '/dindeya-org-dindeya-website/',
+  base: '/',
   publicDir: '../public',
   build: {
     outDir: '../dist',
