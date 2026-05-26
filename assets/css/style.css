@@ -1986,6 +1986,8 @@ textarea {
   .journey-timeline::before {
     left: 10px;
     transform: none;
+    top: 0;
+    height: 100%;
   }
 
   .journey-item,
@@ -2475,12 +2477,12 @@ textarea {
 
   .projects-hero-stats { gap: var(--spacing-lg); }
 
-  .hero-impact-cards { gap: var(--spacing-sm); }
-  .hero-impact-card { min-width: 110px; padding: var(--spacing-md) var(--spacing-lg); }
+  .hero-impact-cards { gap: var(--spacing-sm); flex-wrap: wrap; }
+  .hero-impact-card { min-width: calc(50% - var(--spacing-sm)); flex: 1 1 calc(50% - var(--spacing-sm)); padding: var(--spacing-md) var(--spacing-lg); }
 }
 
 @media (max-width: 480px) {
-  .hero-impact-card { min-width: 90px; }
+  .hero-impact-card { min-width: calc(50% - var(--spacing-sm)); }
   .hic-value { font-size: var(--font-size-xl); }
   .project-highlight-card { height: 220px; }
   .membership-hero h1 { font-size: var(--font-size-4xl); }

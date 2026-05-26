@@ -12,7 +12,7 @@ export const SITE_CONFIG = {
   
   // URLs & Domain
   siteUrl: 'https://dindeya.org',
-  contactEmail: 'dindeyausa@gmail.com',
+  contactEmail: 'info@dindeya.org',
   secondaryEmail: 'info@dindeya.org',
   phone: '862-300-7004',
   location: 'New York, NY, United States of America',
